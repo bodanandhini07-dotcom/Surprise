@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Little Something For You ✨</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="progress">
+    <span></span>
+</div>
+
+<main>
+
+    <!-- SLIDE 1 -->
+    <section class="slide slide1 active">
+
+        <div class="stars"></div>
+
+        <div class="moon">🌙</div>
+
+        <div class="cloud cloud1">☁️</div>
+        <div class="cloud cloud2">☁️</div>
+
+        <div class="sparkle s1">✦</div>
+        <div class="sparkle s2">✧</div>
+        <div class="sparkle s3">✦</div>
+        <div class="sparkle s4">✧</div>
+
+        <div class="content">
+            <p class="small-title">HEY...</p>
+
+            <h1>
+                Wait a second. 🌙
+            </h1>
+
+            <p class="big-text">
+                Before you think about everything again,
+                just stay here for a little while.
+            </p>
+
+            <p class="sub-text">
+                You don't have to solve anything right now.
+                You don't have to explain anything.
+                You don't even have to pretend that you're okay.
+            </p>
+
+            <button onclick="nextSlide()">
+                Stay for a little while ✨
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- SLIDE 2 -->
+    <section class="slide slide2">
+
+        <div class="sun"></div>
+
+        <div class="cloud cloud3">☁️</div>
+        <div class="cloud cloud4">☁️</div>
+
+        <div class="flower f1">🌸</div>
+        <div class="flower f2">🌼</div>
+        <div class="flower f3">🌷</div>
+
+        <div class="butterfly b1">🦋</div>
+        <div class="butterfly b2">🦋</div>
+        <div class="butterfly b3">🦋</div>
+
+        <div class="content">
+
+            <p class="small-title">SOMETIMES...</p>
+
+            <h1>
+                Some days just feel weird.
+            </h1>
+
+            <p class="big-text">
+                You can laugh with everyone,
+                talk normally,
+                finish your work...
+                and still feel something sitting quietly inside you.
+            </p>
+
+            <p class="sub-text">
+                Maybe you don't even know exactly why.
+                And that's completely okay.
+            </p>
+
+            <div class="quote-box">
+                “You don't need a perfect reason
+                to deserve a little kindness.”
+            </div>
+
+            <button onclick="nextSlide()">
+                Keep going 🌸
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SLIDE 3 -->
+    <section class="slide slide3">
+
+        <div class="aurora aurora1"></div>
+        <div class="aurora aurora2"></div>
+        <div class="aurora aurora3"></div>
+
+        <div class="floating-word word1">breathe</div>
+        <div class="floating-word word2">pause</div>
+        <div class="floating-word word3">smile</div>
+        <div class="floating-word word4">relax</div>
+        <div class="floating-word word5">reset</div>
+        <div class="floating-word word6">bloom</div>
+        <div class="floating-word word7">hope</div>
+        <div class="floating-word word8">shine</div>
+
+        <div class="content">
+
+            <p class="small-title">FOR NOW...</p>
+
+            <h1>
+                Forget everything for a minute. ✨
+            </h1>
+
+            <p class="big-text">
+                No overthinking.
+                No replaying conversations in your head.
+                No wondering what someone meant.
+            </p>
+
+            <p class="sub-text">
+                Just breathe in slowly...
+                and let the moment pass through you.
+            </p>
+
+            <div class="breathing-circle">
+                <span> breathe </span>
+            </div>
+
+            <p class="tiny">
+                You are allowed to take a break from your thoughts.
+            </p>
+
+            <button onclick="nextSlide()">
+                I feel a little better 💫
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SLIDE 4 -->
+    <section class="slide slide4">
+
+        <div class="night-stars"></div>
+
+        <div class="little-star ls1">⭐</div>
+        <div class="little-star ls2">✨</div>
+        <div class="little-star ls3">⭐</div>
+        <div class="little-star ls4">✦</div>
+
+        <div class="content">
+
+            <p class="small-title">WAIT...</p>
+
+            <h1>
+                There is something here for you. 🎁
+            </h1>
+
+            <p class="big-text">
+                Nothing expensive.
+                Nothing complicated.
+                Just a tiny reminder that your mood
+                doesn't have to stay the same forever.
+            </p>
+
+            <div class="gift" onclick="openGift()">
+
+                <div class="gift-lid">
+                    <div class="ribbon"></div>
+                </div>
+
+                <div class="gift-body">
+                    <div class="ribbon vertical"></div>
+                </div>
+
+            </div>
+
+            <p id="giftText" class="gift-text">
+                Tap the little box 🎀
+            </p>
+
+            <button id="giftButton" onclick="openGift()">
+                Open it 💗
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SLIDE 5 -->
+    <section class="slide slide5">
+
+        <div class="floating-heart heart1">♡</div>
+        <div class="floating-heart heart2">♡</div>
+        <div class="floating-heart heart3">♥</div>
+        <div class="floating-heart heart4">♡</div>
+
+        <div class="pink-glow glow1"></div>
+        <div class="pink-glow glow2"></div>
+
+        <div class="content message-content">
+
+            <p class="small-title">A LITTLE REMINDER</p>
+
+            <h1>
+                One moment does not define your whole day.
+            </h1>
+
+            <div class="long-message">
+
+                <p>
+                    Not every person will understand your heart.
+                    Not every conversation will go the way you expected.
+                    And not every day will feel easy.
+                </p>
+
+                <p>
+                    Sometimes people say things without realizing
+                    how much their words can stay in someone's mind.
+                    Sometimes you keep thinking about one sentence
+                    again and again.
+                </p>
+
+                <p>
+                    But hey...
+                    one awkward conversation,
+                    one bad reply,
+                    one disappointing moment,
+                    or one person's behavior
+                    doesn't get to decide your entire day.
+                </p>
+
+                <p>
+                    You are allowed to step away.
+                    You are allowed to be quiet.
+                    You are allowed to feel upset.
+                    You are allowed to take your time.
+                </p>
+
+                <p class="highlight">
+                    And after all of that...
+                    you are still allowed to smile again. 🌷
+                </p>
+
+            </div>
+
+            <button onclick="nextSlide()">
+                I choose my peace 🌸
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SLIDE 6 -->
+    <section class="slide slide6">
+
+        <div class="rain"></div>
+
+        <div class="umbrella">☂️</div>
+
+        <div class="content">
+
+            <p class="small-title">ONE MORE THING...</p>
+
+            <h1>
+                You don't have to be okay every second.
+            </h1>
+
+            <p class="big-text">
+                You can have a bad moment
+                without having a bad life.
+            </p>
+
+            <div class="mini-cards">
+
+                <div class="mini-card">
+                    🌱
+                    <span>Take your time.</span>
+                </div>
+
+                <div class="mini-card">
+                    ☕
+                    <span>Do something comforting.</span>
+                </div>
+
+                <div class="mini-card">
+                    🌷
+                    <span>Give yourself some kindness.</span>
+                </div>
+
+                <div class="mini-card">
+                    ✨
+                    <span>Let tomorrow be tomorrow.</span>
+                </div>
+
+            </div>
+
+            <p class="sub-text">
+                Tonight doesn't need answers.
+                Sometimes it just needs a little rest.
+            </p>
+
+            <button onclick="nextSlide()">
+                One last page ✨
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SLIDE 7 -->
+    <section class="slide slide7">
+
+        <div class="final-stars"></div>
+
+        <div class="final-moon">🌙</div>
+
+        <div class="firefly fire1">✦</div>
+        <div class="firefly fire2">✧</div>
+        <div class="firefly fire3">✦</div>
+        <div class="firefly fire4">✧</div>
+        <div class="firefly fire5">✦</div>
+
+        <div class="content">
+
+            <p class="small-title">AND NOW...</p>
+
+            <h1>
+                Enough overthinking for today. 💫
+            </h1>
+
+            <p class="big-text">
+                Take a deep breath.
+            </p>
+
+            <div class="final-list">
+
+                <p>💧 Drink some water.</p>
+                <p>🛏️ Get comfortable.</p>
+                <p>🎧 Listen to something you love.</p>
+                <p>🌸 Do one tiny thing that makes you smile.</p>
+                <p>🌙 Let the rest wait until tomorrow.</p>
+
+            </div>
+
+            <div class="final-message">
+                You deserve peaceful moments too.
+                <br>
+                Don't let one bad moment become your whole story.
+                <br><br>
+                <strong>Tomorrow is another page. ✨</strong>
+            </div>
+
+            <button onclick="restart()">
+                Start the little reset again ↻
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
